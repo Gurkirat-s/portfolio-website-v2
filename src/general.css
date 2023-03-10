@@ -1,3 +1,10 @@
 :root {
   --primary-dark: #0a192f;
+  --primary-med: #0077b6;
+  --secondary-dark: #8892b0;
+  --secondary-dark2: #949db8;
+}
+
+body {
+  background-color: var(--primary-dark);
 }
