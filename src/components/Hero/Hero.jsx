@@ -4,7 +4,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <div className="container">
         <h2>Hi, my name is</h2>
         <h1>Gurkirat Singh</h1>

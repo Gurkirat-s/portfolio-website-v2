@@ -25,3 +25,9 @@
 .interests h4 {
   font-size: 1.8rem;
 }
+
+@media (max-width: 800px) {
+  .about {
+    margin: 0 1rem;
+  }
+}

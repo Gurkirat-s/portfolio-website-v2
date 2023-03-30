@@ -50,3 +50,29 @@
 .skill-card img {
   width: 90px;
 }
+
+@media (max-width: 800px) {
+  .skills {
+    margin: 0 1rem;
+  }
+  .skills-grid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .skill-card img {
+    width: 50px;
+  }
+
+  .skill-card h5 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}

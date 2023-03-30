@@ -1,7 +1,7 @@
 @import '../../general.css';
 
 .projects {
-  height: 100vh;
+  height: max(100vh, 60rem);
   margin: 0 2rem;
 }
 
@@ -23,11 +23,11 @@
   gap: 2rem;
   height: 700px;
   max-width: 100%;
+  margin-bottom: 30rem;
 }
 
 .project-card {
   border-radius: 10px;
-  /* background-color: rgba(255, 0, 0, 0.646); */
   background-size: cover;
   overflow: hidden;
   box-shadow: 0px 11px 44px -16px #000;
@@ -48,10 +48,6 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   color: white;
-  /* text-shadow: 0 0 4px white; */
-  /* text-shadow: 1px 1px 0px white, 1px -1px 0px white, -1px 1px 0px white,
-    -1px -1px 0px white; */
-  /* text-shadow: -2px -2px 0px white; */
 }
 
 .project-card h5 {
@@ -100,7 +96,6 @@
 }
 
 .project-card .buttons {
-  /* padding: 1.3rem 0 0.5rem; */
   display: flex;
   gap: 1rem;
   margin-top: auto;
@@ -112,7 +107,6 @@
   text-decoration: none;
   padding: 5px 10px;
   background-color: var(--primary-dark);
-  /* margin-top: 3rem; */
   border: 2px solid white;
   color: white;
   font-weight: 300;
@@ -126,27 +120,44 @@
 .project-card .btn:hover,
 .project-card .btn:active {
   border-color: var(--primary-med);
-  /* color: var(--secondary-dark); */
   background-color: var(--primary-med);
 }
 
-/* .project-card .btn:link,
-.project-card .btn:visited {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
+@media (max-width: 800px) {
+  .projects {
+    margin: 0 1rem;
+  }
 
-  background-color: var(--primary-dark);
-  color: var(--text-dark1);
-  padding: 0.5rem 1rem;
-  margin-right: 1rem;
-  border-radius: 0.4rem;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  .projects-grid {
+    gap: 1rem;
+  }
+
+  .project-card .info {
+    margin-top: 18rem;
+  }
 }
 
-.project-card .btn:hover,
-.project-card .btn:active {
-  background-color: var(--primary-med);
-  transition: all 0.3s ease-in-out;
-} */
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .project-card {
+    height: 300px;
+  }
+
+  .project-card .info {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-card {
+    height: 350px;
+  }
+  .project-card .info {
+    /* margin-top: 18.5rem; */
+    margin-top: 0;
+  }
+}
