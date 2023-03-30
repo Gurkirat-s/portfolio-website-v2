@@ -1,15 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
-import "./general.css";
+import './App.css';
+import './general.css';
 
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
+      <About />
+      <Skills />
+      <Projects />
     </div>
   );
 }

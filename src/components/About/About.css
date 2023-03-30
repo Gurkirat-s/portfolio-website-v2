@@ -1,0 +1,27 @@
+@import '../../general.css';
+
+.about {
+  height: 100vh;
+  margin: 0 2rem;
+}
+
+.about .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about p {
+  line-height: 1.5rem;
+  /* letter-spacing: 1px; */
+  font-size: 1.1rem;
+}
+
+.interests {
+  margin-top: 2rem;
+}
+
+.interests h4 {
+  font-size: 1.8rem;
+}
