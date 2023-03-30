@@ -1,0 +1,96 @@
+@import '../../general.css';
+
+.contact {
+  margin-bottom: 10rem;
+  /* height: 100vh; */
+}
+
+.contact .container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.social-links {
+  margin: 3rem auto 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-links a:link,
+.social-links a:visited {
+  height: 60px;
+  width: 75px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover,
+.social-links a:active {
+  border-color: var(--primary-med);
+  background-color: var(--primary-med);
+}
+
+.contact h3 {
+  display: inline-block;
+}
+
+.contact h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact form div {
+  /* background: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem; */
+  gap: 1rem;
+}
+
+.contact input[type='text'],
+.contact input[type='email'],
+.contact textarea {
+  padding: 0.75rem 1rem;
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+  /* border-radius: 0.4rem; */
+  border: none;
+  background-color: var(--secondary-dark2);
+}
+
+.btn-submit {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: var(--primary-dark);
+  border: 2px solid white;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.btn-submit:hover {
+  border-color: var(--primary-med);
+  background-color: var(--primary-med);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.message {
+  height: 200px;
+  text-justify: initial;
+  resize: none;
+}
