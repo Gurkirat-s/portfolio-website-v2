@@ -24,10 +24,11 @@
   list-style: none;
 }
 
-.links li a {
+.link {
   text-decoration: none;
   color: inherit;
   position: relative;
+  cursor: pointer;
 }
 
 .links li a:after {
@@ -50,7 +51,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
 }
 
 @media (max-width: 800px) {
