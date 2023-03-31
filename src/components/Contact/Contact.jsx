@@ -3,9 +3,9 @@ import './Contact.css';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const Contact = () => {
-  console.log(process.env.REACT_APP_FORM_URL);
   return (
     <div className="contact" id="contact">
       <div className="container">
