@@ -6,19 +6,11 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const Navbar = () => {
-  const [theme, setTheme] = useState('dark');
+const Navbar = ({ toggleDarkMode, theme }) => {
   const [navOpen, setNavOpen] = useState(false);
 
   const handleDarkModeChange = () => {
-    console.log('Theme changed');
-    setTheme((prev) => {
-      if (prev === 'dark') {
-        return 'light';
-      } else {
-        return 'dark';
-      }
-    });
+    toggleDarkMode();
   };
 
   const handleMobileNav = () => {
@@ -37,9 +29,9 @@ const Navbar = () => {
           <li>
             <DarkModeSwitch
               className="dark-mode-btn"
-              checked={theme === 'dark'}
+              checked={theme !== 'light'}
               onChange={handleDarkModeChange}
-              sunColor="#555"
+              sunColor="#ffd000"
               moonColor="#949db8"
             />
           </li>

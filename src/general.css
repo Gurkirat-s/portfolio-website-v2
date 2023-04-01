@@ -1,13 +1,11 @@
 :root {
   --primary-dark: #0a192f;
+  --primary-dark2: #233044;
   --primary-med: #0077b6;
   --secondary-dark: #8892b0;
   --secondary-dark2: #949db8;
   --text-dark1: #d1d5db;
-}
-
-body {
-  background-color: var(--primary-dark);
+  --light-bg: #949db8;
 }
 
 .container {
@@ -30,4 +28,12 @@ h3:after {
   height: 4px;
   width: 100%;
   background-color: var(--primary-med);
+}
+
+.light h3 {
+  color: var(--primary-dark2);
+}
+
+.light p {
+  color: var(--primary-dark2);
 }

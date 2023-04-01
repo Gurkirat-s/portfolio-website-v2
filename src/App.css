@@ -5,3 +5,11 @@
   padding: 0;
   font-family: 'Rubik', sans-serif;
 }
+
+.app {
+  background-color: var(--primary-dark);
+}
+
+.light.app {
+  background-color: var(--light-bg);
+}

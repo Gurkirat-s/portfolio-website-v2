@@ -26,6 +26,10 @@
   font-size: 1.8rem;
 }
 
+.light .interests h4 {
+  color: var(--primary-dark2);
+}
+
 @media (max-width: 800px) {
   .about {
     margin: 0 1rem;

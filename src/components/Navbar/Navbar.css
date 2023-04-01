@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem;
+  padding: 0 2rem;
   color: var(--secondary-dark2);
 }
 
@@ -75,7 +75,7 @@
 
 @media (max-width: 800px) {
   .navbar {
-    margin: 0 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -99,6 +99,18 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  .light .main-nav {
+    color: var(--primary-dark);
+    background-color: var(--secondary-dark);
+  }
+  .links li a:after {
+    height: 2px;
+  }
+  .light .links li a:after {
+    background-color: var(--primary-dark);
+  }
+
   .dark-mode-btn {
     font-size: 4rem;
   }

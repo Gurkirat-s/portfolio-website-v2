@@ -21,6 +21,7 @@
   height: 60px;
   width: 75px;
   border: 2px solid white;
+  background-color: var(--primary-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +45,10 @@
   margin-bottom: 1rem;
 }
 
+.light .contact h4 {
+  color: var(--primary-dark2);
+}
+
 .contact form div {
   /* background: rebeccapurple; */
   display: flex;
@@ -61,6 +66,12 @@
   /* border-radius: 0.4rem; */
   border: none;
   background-color: var(--secondary-dark2);
+}
+
+.light .contact input[type='text'],
+.light .contact input[type='email'],
+.light .contact textarea {
+  background-color: var(--text-dark1);
 }
 
 .btn-submit {
@@ -93,4 +104,10 @@ textarea:focus {
   height: 200px;
   text-justify: initial;
   resize: none;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    margin: 0 1rem;
+  }
 }

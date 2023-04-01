@@ -39,6 +39,10 @@
   transform: scale(1.01);
 }
 
+.light .project-card:hover {
+  box-shadow: 0px 11px 44px -9px var(--primary-dark);
+}
+
 .project-card img {
   object-fit: contain;
   max-width: 100%;
@@ -78,6 +82,10 @@
 
 .project-card .info p {
   margin-bottom: 1rem;
+}
+
+.light .project-card .info p {
+  color: var(--text-dark1);
 }
 
 .tools {
@@ -138,6 +146,10 @@
 }
 
 @media (max-width: 700px) {
+  .projects {
+    height: 100%;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

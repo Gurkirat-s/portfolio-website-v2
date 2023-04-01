@@ -8,11 +8,25 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+import { useState } from 'react';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  const toggleDarkMode = () => {
+    console.log('theme changed');
+    setTheme((prev) => {
+      if (prev === 'dark') {
+        return 'light';
+      } else {
+        return 'dark';
+      }
+    });
+  };
+
   return (
-    <div className="app">
-      <Navbar />
+    <div className={theme === 'light' ? 'app light' : 'app'}>
+      <Navbar toggleDarkMode={toggleDarkMode} theme={theme} />
       <Hero />
       <About />
       <Skills />
