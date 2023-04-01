@@ -40,6 +40,16 @@ const projects = [
     ],
   },
   {
+    title: 'Max Weather',
+    type: 'Personal Project',
+    id: 3,
+    description: 'Weather app developed using React and "WeatherAPI".',
+    demoURL: 'https://weather-five-tau-55.vercel.app/',
+    githubURL: 'https://github.com/Gurkirat-s/weather-app',
+    imgURL: 'max-weather1.png',
+    tools: ['HTML', 'CSS3', 'JavaScript', 'React'],
+  },
+  {
     title: 'Tiffin Station',
     type: 'Client Project',
     id: 4,
